@@ -1,74 +1,962 @@
-img{
-  width: 60%;
-  display:flex;
-  margin:auto;
+.body{
+    background-color: #213b52;
+    font-family: 'Roboto', sans-serif;
+}
+/*  Margen del fondo del container  */
+.container{
+    margin-bottom: 2%;
+  }
+
+  /*  NAVBAR */
+
+  @media (max-width:500px){
+    .navbar-brand{
+      margin-left: 25%;
+    }
+  
+  }
+
+
+
+@media (min-width: 200x){
+    .head{
+            margin-bottom: 3%;
+    }
+
+ 
+  
+    
+  
+    .carousel-inner{
+        margin-top: 4%;
+        margin-bottom: 5%;
+    }
+  }
+  
+  @media (min-width: 200px){
+      .head{
+              margin-bottom: 3%;
+      }
+  
+      .carousel-inner{
+          margin-top: 4%;
+          margin-bottom: 5%;
+      }
+  }
+  
+  .form-inline{
+    margin-left: 74%;
+  }
+  
+  .dropdown-menu a{
+    text-align: center;
+  }
+  
+  .nav-link{
+    font-size: 18px;
+  }
+  
+  /* Imagen en la sección de noticias, fechas, torneos*/
+  .img-fluida { 
+    width: 50%;
+  }
+  
+  @media (min-width: 1020px){
+    .navbar{
+      height: 70px;
+    }
+    .navbar-nav.navbar-center {
+      position: absolute;
+      left: 50%;
+      transform: translatex(-50%);
+    }
+    
+  .dropdown-menu a{
+    text-align: left;
+  }
+  
+  .img-fluida { 
+    width: 40%;
+    margin-left: 25%;
+  }
+  }
+  
+  /*  centrando el texto de las opciones como paginaciones*/
+  .tab-content  .tab-pane p{
+    text-align: justify;
+  }
+  
+
+  /*  SEGMENTO DEL HERO  */
+  
+#hero {
+    width: 100%;
+    height: 80vh;
+    background: url("../images/keyboar.jpg") center center;
+    background-size: cover;
+    position: relative;
+    margin-top: -80px;
+    z-index: 9;
+  }
+  
+  #hero .hero-container {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 15px;
+  }
+  
+  #hero h1 {
+    color: #FFF;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 400;
+    font: italic bold 50px Georgia, Serif;
+    text-shadow: -4px 3px 0 #34d16e, -14px 7px 0 #0a0e27;
+  }
+  
+  #hero h2 {
+    color: rgb(255, 255, 255);
+    margin-bottom: 30px;
+    font-weight:35px;
+    font-size: 24px;
+  }
+  
+  @-webkit-keyframes animate-loading-notify {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes animate-loading-notify {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    #hero {
+      background-attachment: fixed;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    #hero h1 {
+      font-size: 28px;
+      line-height: 36px;
+    }
+    #hero h2 {
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 30px;
+    }
+  
+  }
+
+
+
+  /*  SEGMENTO DE LOGOS  */
+.logos {
+    padding: 0;
+  }
+  
+  .logos .logo-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 120px;
+  }
+  
+  .logos .logo-logo img {
+    height: 65px;
+  }
+  
+  .logos .logo-logo:hover img {
+    transform: scale(1.2);
+  }
+  
+  .logos img {
+    transition: all 0.4s ease-in-out;
+  }
+  
+  /* SEGEMENTO DE "ABOUT" */
+  
+.about .content {
+    padding: 30px 0;
+  }
+  
+  @media (max-width:600px){
+    .about .content h3 {
+      font-weight: 700;
+      font-size: 34px;
+      color: #213b52;
+      text-align: center;
+    }
+  }
+
+  .about .content h3 {
+    font-weight: 700;
+    font-size: 34px;
+    color: #213b52;
+  }
+  .about .content p {
+    margin-bottom: 0;
+    text-align: justify;
+  }
+  
+  .about .content .icon-box {
+    margin-top: 25px;
+  }
+  
+  .about .content .icon-box h4 {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 5px 0 10px 60px;
+    color: #213b52;
+  }
+  
+  .about .content .icon-box h4 a {
+    color: #213b52;
+    transition: 0.3s;
+  }
+  
+  .about .content .icon-box h4 a:hover {
+    color: #fdc134;
+  }
+  
+  .about .content .icon-box i {
+    font-size: 48px;
+    float: left;
+    color: #fdc134;
+  }
+  
+  .about .content .icon-box p {
+    font-size: 15px;
+    color: #848484;
+    margin-left: 60px;
+  }
+  
+  .about .image {
+    background: url("../images/League1.png") center center no-repeat;
+    background-size: cover;
+    min-height: 400px;
+  }
+  
+  .about .image:hover{
+    transform: scale(1.05);
+    transition: transform 100ms, filter 60ms ease-in-out;
+  }
+  
+  @media (max-width: 667px) {
+     .about .image  {
+      width: 98%;
+      margin: auto;
+    }
+  
+    .about .image:hover{
+      transform: scale(1.017);
+      transition: transform 100ms, filter 60ms ease-in-out;
+    }
+  }
+  
+  /*  SEGMENTO DE CARDS */
+.card-deck{
+    margin-bottom: 3%;
+    margin-top: 5%;
+  }
+  .card-deck .card{
+    box-shadow: 2px 2px 10px rgb(133, 123, 123); 
+   
+  }
+  
+  .card-deck  .card:hover{
+    transform: scale(1.0050);
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 6);
+    transition: box-shadow 100ms, transform 100ms, filter 60ms ease-in-out;
+  }
+
+  /*  IMAGEN CON NOTICIA */
+
+@media (max-width: 767px) {
+
+  .card-box-b {
+    margin-bottom: 2.5rem;
+  }
 }
 
-/* Navegación y encabezado */
-.header nav {
-  padding: 1em 0;
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
- }
 @media (min-width: 768px) {
-  .header nav {
-    flex-direction: row;
-    justify-content: space-between;
+  .grid .card-box-b {
+    margin-bottom: 2.5rem;
   }
 }
-.header nav a {
-  color: var(--dark);
-  text-decoration: none;
-  font-size: 1.4em;
-  margin-bottom: 2em;
+
+
+.card-box-b {
+  position: relative;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
-.header nav a:last-of-type {
-  margin-bottom: 0;
+
+
+.card-box-b .img-b {
+  transition: .8s all ease-in-out;
 }
+
 @media (min-width: 768px) {
-  .header nav a {
-    margin-bottom: 0;
+
+  .card-box-b:hover .img-b {
+    transform: scale(1.2);
   }
 }
-.container{
-  display: grid;
-  grid-template-columns: 70% 30%;
+
+@media (min-width: 768px) {
+  .card-box-b .price-a {
+    font-size: .9rem;
+  }
 }
-.container1{
-  width: 100%;
-  max-width: 1200px;
-  border: 10px solid #0000;
-  margin:  auto;
-  display: grid;
-  grid-template-columns: 100%;
+
+@media (min-width: 992px) {
+  .card-box-b .price-a {
+    font-size: 1rem;
+  }
 }
-.container1 > div{
-  display: block;
-  padding: 20px;
-  color: #ffff;
-  background: #2f89fc;
-  box-shadow: 2px 2px 10px rgba(0,0,0,.25);
-}
-.container2{
-  width: 100%;
-  max-width: 1200px;
-  border: 10px solid #0000;
-  margin:  auto;
-  display: grid;
-  grid-template-columns: 30% 70%;
-}
-.container2 > div{
-  display: block;
-  padding: 20px;
-  color: #ffff;
-  background: #2f2f2f;
-  box-shadow: 2px 2px 10px rgba(0,0,0,.25);
-}
-.container2 > img{
+
+.card-overlay {
+  position: absolute;
   width: 100%;
   height: 100%;
-  align-items: center;
+  top: 0;
+  left: 0;
 }
+
+.card-shadow {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.card-shadow:before {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 27%, rgba(0, 0, 0, 0.65) 90%);
+}
+
+/*  Tarjera contenedora de la imagen con el texto */
+.card-header-b {
+  padding: 1rem;
+  color: #ffffff;
+  position: absolute;
+  bottom: 20px;
+  z-index: 2;
+}
+
+@media (min-width: 768px) {
+  .card-header-b {
+    bottom: 0px;
+  }
+}
+
+@media (min-width: 992px) {
+  .card-header-b {
+    bottom: 20px;
+  }
+}
+
+.card-header-b .category-b {
+  font-size: .9rem;
+  background-color: #2eca6a;
+  padding: .3rem .7rem;
+  color: #313131;
+  letter-spacing: 0.030em;
+  border-radius: 50px;
+  text-decoration: none;
+}
+
+.card-header-b .title-2 {
+  margin-bottom: 0;
+  padding: .6rem 0;
+  font-size: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .card-header-b .title-2 {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .card-header-b .title-2 {
+    font-size: 1.6rem;
+  }
+}
+
+.card-header-b .title-2 a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.card-header-b .date-b {
+  color: #d8d8d8;
+  font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+  .card-header-b .date-b {
+    font-size: .9rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .card-header-b .date-b {
+    font-size: 1rem;
+  }
+}
+
+
+
+  /*  SEGMENTOS DE LOS POST MÁS RECIENTES  */
+
+.post{
+    margin-bottom: 7%;
+  }
+  
+  @media (min-width: 1020px){
+    .post{
+      margin-bottom: 1%;
+    }
+  }
+  section.latest-posts header {
+    margin-bottom: 50px;
+  }
+  
+  .post-meta {
+    margin: 10px 0;
+    font-size: 0.8em;
+  }
+  
+  .post-meta .date {
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+  
+  .post-meta .date::after {
+    display: none;
+  }
+  
+  .post p:not(.lead) {
+    font-weight: 400;
+    color: #777;
+    font-size: 0.95em;
+  }
+  
+  .post a {
+    text-decoration: none;
+  }
+  
+  .post a:hover, .post a:focus {
+    text-decoration: none;
+  }
+  
+  .post h3 {
+    text-decoration: none;
+    line-height: 1.1em;
+    color: #222;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    margin-bottom: 1rem;
+  }
+  
+  
+  
+  .post h3:hover {
+    color: #555;
+  }
+  
+  .post .category a {
+    color: #999;
+    letter-spacing: 0.05em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  
+  .post .date {
+    letter-spacing: 0.05em;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #aaa;
+  }
+  
+  .post .avatar {
+    max-width: 40px;
+    min-width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .post .title,
+  .post .date,
+  .post .comments,
+  .post .views {
+    font-weight: 400;
+    color: #999;
+    text-transform: capitalize;
+  }
+  
+  .post .title i,
+  .post .date i,
+  .post .comments i,
+  .post .views i {
+    margin-right: 5px;
+    font-size: 1.1em;
+  }
+  
+  .post .title::after,
+  .post .date::after,
+  .post .comments::after,
+  .post .views::after {
+    content: '|';
+    display: inline-block;
+    margin: 0 7px;
+    font-size: 0.9em;
+    color: #ccc;
+  }
+  
+  .post .post-tags {
+    margin-top: 30px;
+  }
+  
+  .post .post-tags .tag {
+    padding: 5px 25px;
+    border: 1px solid #ddd;
+    margin: 5px;
+    color: #777;
+    font-size: 0.75em;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 50px;
+  }
+  
+  .post .post-tags .tag:hover {
+    background: #999;
+    color: #fff;
+    border-color: #999;
+  }
+  
+  .post .meta-last::after {
+    display: none;
+  }
+
+/*  SEGMENTO DE BACKGROUND IMAGE */
+.bckImageCool {
+    background: linear-gradient(rgba(2, 2, 2, 0.1), rgba(0, 0, 0, 0.5)), url("../images/artiom-vallat-H-qqp_Eqaww-unsplash.jpg") fixed center center;
+    background-size: cover;
+    padding: 120px 0;
+  }
+
+  .bckImageCool2{
+    background: linear-gradient(rgba(2, 2, 2, 0.1), rgba(0, 0, 0, 0.5)), url("../images/rgb.jpg") fixed center center;
+    background-size: cover;
+    padding: 120px 0;
+  }
+  
+  .bckImageCool .bckImageCool-btn {
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 28px;
+    border-radius: 4px;
+    transition: 0.5s;
+    margin-top: 10px;
+    border: 2px solid #fff;
+    color: #fff;
+  }
+  
+  .bckImageCool .bckImageCool-btn:hover {
+    background: #00c1c1;
+    border: 2px solid #00c1c1;
+  }
+  
+  .bckImageCool h3 {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 700;
+  }
+  
+  .bckImageCool p {
+    color: #fff;
+  }
+  
+
+  
+  .bckImageCool2 .bckImageCool-btn {
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 28px;
+    border-radius: 4px;
+    transition: 0.5s;
+    margin-top: 10px;
+    border: 2px solid #fff;
+    color: #fff;
+  }
+  
+  .bckImageCool2 .bckImageCool-btn:hover {
+    background: #00c1c1;
+    border: 2px solid #00c1c1;
+  }
+  
+  .bckImageCool2 h3 {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 700;
+  }
+  
+  .bckImageCool2 p {
+    color: #fff;
+  }
+  
+  /*  SEGMENTO DE EDITORES  */
+#Editors {
+    margin-top: 2px;
+  }
+  
+  #Editors .Editor {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+  }
+  
+  #Editors .Editor .details {
+    background: rgba(6, 12, 34, 0.76);
+    position: absolute;
+    left: 0;
+    bottom: -30px;
+    right: 0;
+    text-align: center;
+    padding-top: 10px;
+    transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+  
+  #Editors .Editor .details h3 {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+  
+  #Editors .Editor .details p {
+    color: #fff;
+    font-size: 15px;
+    margin-bottom: 2px;
+    font-style: italic;
+  }
+  
+  #Editors .Editor .details .social {
+    height: 77px;
+  }
+  
+  #Editors .Editor .details a {
+    color: #fff;
+  }
+  
+  #Editors .Editor .details a:hover {
+    color: #f82249;
+  }
+  
+  #Editors .Editor:hover .details {
+    bottom: 0;
+  }
+  
+  #Editors-details {
+    padding: 60px 0;
+  }
+  
+  #Editors-details .details h2 {
+    color: #112363;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  
+  #Editors-details .details .social {
+    margin-bottom: 15px;
+  }
+  
+  #Editors-details .details .social a {
+    background: #e9edfb;
+    color: #112363;
+    line-height: 1;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    padding-top: 9px;
+  }
+  
+  #Editors-details .details .social a:hover {
+    background: #2266f8;
+    color: #fff;
+  }
+  
+  #Editors-details .details .social a i {
+    font-size: 18px;
+  }
+  
+  #Editors-details .details p {
+    color: #112363;
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
+  /* ESTILOS PARA LA INTRODUCCIÓN DE LOS EDITORES  */
+  section {
+    padding: 10px 0;
+    overflow: hidden;
+  }
+  
+  .section-bg {
+    background: linear-gradient(180deg, #ffffff 0%, #fff 100%); 
+    margin-bottom: 3%;
+  }
+  
+  .section-title {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  
+  .section-title h2 {
+    font-size: 32px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: #213b52;
+  }
+  
+  .section-title h2::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: #ddd;
+    bottom: 1px;
+    left: calc(50% - 60px);
+  }
+  
+  .section-title h2::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #fdc134;
+    bottom: 0;
+    left: calc(50% - 20px);
+  }
+  
+  .section-title p {
+    margin-bottom: 0;
+  }
+  
+  /* FOOTER  */
+.footer-copyright{
+    background-color: #263238;
+  }
+ 
+  .col-md-12{
+    background-color: #4f5b62;
+  }
+  
+  .page-footer{
+    background-color: #4f5b62;
+  }
+  
+  .footer-copyright{
+    color: white;
+  }
+  .fab{
+    color: white;
+  }
+
+
+  /* -------------------------ARTICULO ESTILO DE JUEGOS----------------------------------*/
+.title-SobreJuego{
+  color: #fff;
+  font-size: 1.2em;
+  padding: 0.2em;
+}
+
+.div-title-SobreJuego{
+  border-radius: 0.2em;
+}
+
+.div-title-Juego{
+  font-size: 1.3em;
+  margin-bottom: 0.8em;
+}
+
+.div-list-Juegos li{
+  margin-left: 1.5em;
+  margin-top: 0.5em;
+}
+
+.div-title-Relacionado{
+  border-radius: 0.2em;
+  text-align: center;
+}
+
+.div-content-relacionados{
+  overflow-y: scroll;
+}
+
+.title-Relacionado{
+  color: #fff;
+  font-size: 1.2em;
+  padding: 0.4em;
+}
+
+.Content-JuegoRecomendado h2{
+  font-size: 1em;
+}
+
+.Content-JuegoRecomendado h3, p {
+  font-size: 0.8em;
+}
+
+.div-JuegosRecomendados{
+  margin-bottom: 1em;
+}
+
+.div-title-Multimedia{
+  color: #fff;
+  margin-top: 3em;
+  border-radius: 0.2em;
+}
+
+
+
+
+
+  /* -------------------------SEGMENTO DE ESTILOS DE CADA INTEGRANTE----------------------------------*/
+
+
+
+  /*--------------------------                          LUIS RIVERA                          ---------------------------------*/
+
+  /* Aquí debe ir el css de dicho integrante, con el cmentario que especifique a que sección de su página pertenece */
+
+  /*-------------------------                          LUIS RIVERA                          ---------------------------------*/
+
+
+
+
+
+
+
+
+ /* Aquí debe ir el css de dicho integrante, con el cmentario que especifique a que sección de su página pertenece */
+
+  /*--------------------------                          MARIO  ARGUETA                          ---------------------------------*/
+
+ 
+.contanedorm{ 
+  display: block;
+  padding: 20px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, .23);
+  margin: 10px;
+}
+.div-design{
+  background-color: rgba(6, 12, 34, 0.76);
+  color: #ffffff;
+  text-align: center;
+}
+.div-design p{
+  margin-bottom: 0%;
+}
+.div-design h3{
+  margin-bottom: 0%;
+}
+.img-format{
+  padding-bottom: 3%;
+  height: 90%;
+}
+
+
+
+
+
+
+  /* Aquí debe ir el css de dicho integrante, con el cmentario que especifique a que sección de su página pertenece */
+
+
+
+  /*----------------------------                          MARIO  ARGUETA                           ---------------------------------*/
+
+
+
+
+
+
+   /* Aquí debe ir el css de dicho integrante, con el cmentario que especifique a que sección de su página pertenece */
+
+    /*--------------------------                          MIGUEL VALDEZ                          ---------------------------------*/
+
+      /* Aquí debe ir el css de dicho integrante, con el cmentario que especifique a que sección de su página pertenece */
+
+  /*----------------------------                          MIGUEL VALDEZ                          ---------------------------------*/
+
+
+
+
+
+
+   /* Aquí debe ir el css de dicho integrante, con el cmentario que especifique a que sección de su página pertenece */
+
+    /*--------------------------                          OSCAR BENITEZ                          ---------------------------------*/
+
+      /* Aquí debe ir el css de dicho integrante, con el cmentario que especifique a que sección de su página pertenece */
+
+  /*----------------------------                          OSCAR BENITEZ                          ---------------------------------*/
+
+
+
+
+   /* Aquí debe ir el css de dicho integrante, con el cmentario que especifique a que sección de su página pertenece */
+
+    /*-------------------------                           JUNNIOR   ZAMBRANO                           ---------------------------------*/
+
+      /* Aquí debe ir el css de dicho integrante, con el cmentario que especifique a que sección de su página pertenece */
+
+  /*----------------------------                          JUNNIOR ZAMBRANO                          ---------------------------------*/
